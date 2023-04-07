@@ -4,15 +4,15 @@ public class Main {
         int balance = 50;
         int bonus = (payment / 100) + payment;
         int total = bonus + balance;
-        boolean correct = payment > 1000;
-        boolean not = payment < 1000;
+        boolean enoughPayment = payment > 1000;
+        boolean notEnough = payment < 1000;
         int plus = 1000 - payment;
-        if (correct) {
+        if (enoughPayment) {
 
             System.out.println(total);
-        } else if (not) {
-            System.out.println(" Для получения бонусаПополните счет еще на");
-            System.out.println(plus);
+        } else  {
+                System.out.println(" Для получения бонусаПополните счет еще на");
+        System.out.println(plus);
 
 
         }
