@@ -10,9 +10,9 @@ public class Main {
         if (enoughPayment) {
 
             System.out.println(total);
-        } else  {
-                System.out.println(" Для получения бонусаПополните счет еще на");
-        System.out.println(plus);
+        } else {
+            System.out.println(" Для получения бонусаПополните счет еще на");
+            System.out.println(plus);
 
 
         }
