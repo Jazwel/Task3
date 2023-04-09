@@ -1,25 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        int payment = 2000;
-        int balance = 100;
-        int bonus = (payment / 100) + payment;
-        int total = bonus + balance;
-        boolean enoughPayment = payment > 1000;
-        boolean notEnough = payment < 1000;
-        int countBonus = (payment / 100);
-        int plus = 1000 - payment;
+        int addAmount = 2000;
+        int startBalance = 100;
+        int bonus = (addAmount / 100);
+        int finalBalance = bonus + addAmount + startBalance;
+        boolean enoughPayment = addAmount > 1000;
+        boolean notEnough = addAmount < 1000;
+
         if (enoughPayment) {
             System.out.println("Начисленный бонус:");
-            System.out.println(countBonus);
+            System.out.println(bonus);
             System.out.println("Сумма на счету:");
-            System.out.println(total);
-        } else {
-            System.out.println("Оплата");
-            System.out.println(payment);
-            System.out.println(" Для получения бонуса Пополните счет еще на:");
-            System.out.println(plus);
-
-
+            System.out.println(finalBalance);
         }
+
+
     }
 }
