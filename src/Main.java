@@ -1,18 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        int addAmount = 2000;
+        int addAmount = 500;
         int startBalance = 100;
         int bonus = (addAmount / 100);
-        int finalBalance = bonus + addAmount + startBalance;
-        boolean enoughPayment = addAmount > 1000;
-        boolean notEnough = addAmount < 1000;
 
-        if (enoughPayment) {
+        if (addAmount > 1000) {
             System.out.println("Начисленный бонус:");
             System.out.println(bonus);
-            System.out.println("Сумма на счету:");
-            System.out.println(finalBalance);
+            int finalBalance = bonus + addAmount + startBalance;
         }
+        System.out.println("Начисленный бонус:0");
+        System.out.println("Сумма на счету:");
+        int finalBalance =addAmount + startBalance;
+            System.out.println(finalBalance);
+
 
 
     }
